@@ -1,0 +1,20 @@
+
+
+.phoneScreen {
+  width: 393px; /* Width of the phone screen */
+  height: 852px; /* Height of the phone screen */
+  background-color: #fff; /* White background for the phone screen */
+  border: 2px solid #ccc; /* Light gray border for a clean look */
+  border-radius: 20px; /* Rounded corners for a phone-like appearance */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow for depth */
+  
+  /* Centering the phone on the page */
+  position: absolute; /* Allows the phone to scroll with the page */
+  top: 72%; /* Move the phone 50% down */
+  left: 50%; /* Move the phone 50% to the right */
+  transform: translate(-50%, -50%); /* Adjust back by half its width and height */
+  
+
+  display: flex; /* Flexbox for arranging content */
+  overflow: hidden; /* Hide overflowing content inside the phone */
+}

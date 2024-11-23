@@ -1,0 +1,34 @@
+
+.backgroundContainer {
+  z-index: -1; /* Place it behind other elements */
+}
+
+.ellipse {
+  width: 615px;
+  height: 615px;
+  flex-shrink: 0;
+  border-radius: 615px;
+  background: var(--baby-lover, radial-gradient(50% 50% at 50% 50%, #FFF 0%, #FFA68B 33.5%, #FF8060 63%, #FFF 93.55%));
+  background-blend-mode: darken;
+  position: absolute;
+  top: -100px; /* Move it higher by decreasing the value */
+  left: calc(80% - 111px); /* Use calc for accurate centering based on Figma */
+  transform: translateX(-50%); /* Proper horizontal centering */
+  
+}
+
+.loweredEllipse {
+  top: 450px;
+  margin-left: 6rem;
+}
+
+.vector {
+  position: absolute;
+  width: 427px; /* Match the SVG dimensions */
+  height: 426px; /* Match the SVG dimensions */
+  left: 68%; /* Center horizontally */
+  top: -23px; /* Move higher on the page */
+  flex-shrink: 0;
+  transform: translateX(-60%); /* Ensure perfect horizontal centering */
+
+}

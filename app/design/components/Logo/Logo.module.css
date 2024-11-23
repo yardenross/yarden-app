@@ -1,0 +1,11 @@
+.logo {
+  position: absolute;
+  top: 60px; /* Adjust to move the logo down */
+  right: 15px; /* Adjust to move the logo to the right */
+  width: 80px; /* Width of the logo */
+  height: 80px; /* Height of the logo */
+  transform: rotate(-5.651deg); /* Retain the rotation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

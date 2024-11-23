@@ -1,19 +1,22 @@
 @import url("reset.css");
-/* This is a custom font from google fonts */
+/* This is a custom font from google fonts 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 
 /* what is :root? https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
 :root {
   /* Define design variables */
-  --color-primary: #2b2d42;
-  --color-secondary: #bfc6d2;
-  --color-background: #f5f5f5;
-  --color-accent: #535bf2;
+  --color-primary: #495867;     /*#2b2d42;    nav bar */
+  --color-secondary: #262F22; /* button outline */
+  --color-background: #F9F5F0; /*#f5f5f5;*/
+  --color-accent:  #000000; /*#535bf2;  /* buttons */
 
   --border-radius: 0.5rem;
 
-  --font-titles: "Rubik", serif;
-  --font-body: system-ui, sans-serif; /* system-ui matches the user's system font */
+  --font-titles: "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif; /* system-ui matches the user's system font */
 }
 
 body {
@@ -97,6 +100,7 @@ h1 {
   font-size: 2.5em;
 }
 
+
 h2 {
   font-size: 2em;
 }
@@ -125,10 +129,13 @@ blockquote {
 /* Links */
 a {
   color: var(--color-accent);
-  text-decoration: underline;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Tables */
@@ -176,3 +183,36 @@ fieldset {
     filter: brightness(80%);
   }
 }
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.exContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid var(--color-secondary);
+  border-radius: 10px; /* Make the container round */
+  margin: 1rem;
+  margin-left: 2rem;
+  width: 20rem;
+  height: 20rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.exContainer:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transform: translateY(-6px); /* Slightly lift the card */
+}
+
+.appName {
+  font-size: 2.5rem;
+}
+
+.appName:hover {
+  text-decoration: none;
+}
+

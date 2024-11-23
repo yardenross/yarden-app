@@ -34,6 +34,18 @@ export const DEMOS = [
     description:
       "An example of a fully functional application that builds random teams and product ideas from this year's students.",
   },
+  {
+    title: "tic-tac-toe",
+    slug: "/tic-tac-toe",
+    description:
+      "A game.",
+  },
+  {
+    title: "NASA",
+    slug: "/nasa",
+    description:
+      "NASA picture.",
+  }
 ];
 
 export const EMAIL_ADDRESS = process.env.EMAIL_ADDRESS || "";

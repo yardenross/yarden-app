@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header id="navbar">
       <h1>
-        <Link href="/">{APP_NAME}</Link>
+        <Link className="appName" href="/">{APP_NAME}</Link>
       </h1>
       <nav>
         <Link href="/">Home</Link>
