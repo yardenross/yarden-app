@@ -18,3 +18,7 @@
   display: flex; /* Flexbox for arranging content */
   overflow: hidden; /* Hide overflowing content inside the phone */
 }
+
+.footer {
+  margin: 5rem;
+}

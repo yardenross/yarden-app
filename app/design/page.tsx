@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import LandingScreen from "./components/LandingScreen/LandingScreen";
+import styles from "./page.module.css"
 
 export default function Demos() {
   const [started, setStarted] = useState(false); // Track if "Get Started" is clicked
