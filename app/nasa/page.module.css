@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .hey {
   font-size: 3rem;
+  font-family: Roboto !important;
 }
-
 
 
 .nasaitem {
   margin-top: 2rem;
+  width: 100%; 
+  padding-top: 10px; 
+  box-sizing: border-box; 
+  position: relative; 
 }
+
+
+.nasaitem::before {
+  content: ""; /* Creates the decorative line */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 3px; /* Thickness of the line */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Faded edges */
+}
+
+.image {
+  border-radius: 1rem;
+}
+

@@ -22,6 +22,17 @@
   margin-left: 6rem;
 }
 
+.sentEllipse {
+  top: 11px;
+  left: 5rem;
+  width: 851px;
+  height: 851px;
+  flex-shrink: 0;
+  border-radius: 851px;
+  background: var(--baby-lover, radial-gradient(50% 50% at 50% 50%, #FFF 0%, #FFA68B 33.5%, #FF8060 63%, #FFF 93.55%));
+  background-blend-mode: darken;
+}
+
 .vector {
   position: absolute;
   width: 427px; /* Match the SVG dimensions */
@@ -30,5 +41,13 @@
   top: -23px; /* Move higher on the page */
   flex-shrink: 0;
   transform: translateX(-60%); /* Ensure perfect horizontal centering */
-
 }
+
+  .sentVector {
+    width: 427px;
+    height: 426px;
+    flex-shrink: 0;
+    left: 68%; /* Center horizontally */
+    top: 14rem; /* Move higher on the page */
+  }
+

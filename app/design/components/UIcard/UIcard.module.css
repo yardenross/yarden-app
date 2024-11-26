@@ -38,7 +38,7 @@
   top: 20px; /* Move it down slightly */
   width: 100%; /* Ensure full width for the container */
   white-space: nowrap; /* Prevent text wrapping */
-  overflow: hidden; /* Prevent overflow issues */
+  /*overflow: hidden; /* Prevent overflow issues */
   text-align: left; /* Align text appropriately */
 
 }
@@ -65,6 +65,7 @@
   font-weight: 300;
   line-height: 143%; /* 42.9px */
   letter-spacing: -2.1px;
+
 }
 
 .highlight {
@@ -95,12 +96,14 @@
 
 .form {
   display: flex;
-  width: 323px;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 26px;
-  padding-top: 47px;
+  align-items: center; /* Center all items horizontally */
+  gap: 26px; /* Space between fields */
+  padding-top: 50px;
+  width: 100%; /* Ensure the form spans the full parent container */
+  position: relative; /* Ensure the form acts as a positioning context for the button */
 }
+
 
 .input {
   display: flex;
@@ -111,7 +114,6 @@
   border-radius: 4px;
   border: 1px solid var(--missing, #5B5B5B);
   background-color: rgba(255, 255, 255, 0); 
-
 
   /* TEXT: */
   color: var(--missing, #5B5B5B);
@@ -132,6 +134,25 @@
 
 
 
+.sendButton {
+  margin-top: 20px; /* Space the button from the last input field */
+  margin-left: 15rem;
+  width: 90px;
+  height: 41px;
+  color: #000;
+  border-radius: 58px;
+  border: 1px solid #000;
+  background-color: rgba(240, 248, 255, 0);
+  font-family: Roboto, sans-serif;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 143%; /* Keep proper text alignment */
+  letter-spacing: -2.03px;
+  cursor: pointer;
+  text-align: center; /* Center the button text */
+  padding: 0px 12px;
+}
 
 
 

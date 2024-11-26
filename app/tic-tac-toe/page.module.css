@@ -22,6 +22,10 @@
   margin-left: 0rem;
 }
 
+.Square:hover {
+  background-color: rgba(118, 113, 113, 0.273);
+}
+
 .status {
   font-size: 2rem;
   margin: 2rem;
@@ -42,4 +46,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: rgba(118, 113, 113, 0.273);
 }
